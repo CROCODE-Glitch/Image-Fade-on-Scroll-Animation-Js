@@ -1,0 +1,126 @@
+:root{
+  --greyO: #f5eFe1;
+  --greyT: #161616;
+}
+
+@font-face {
+  font-family: harmond;
+  src: url(./fonts/Harmond-ExtraBoldExpanded.otf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: harmond, sans-serif;
+  color: var(--greyT);
+}
+
+html,
+body{
+  background-color: var(--greyO);
+  height: 2000px;
+}
+
+h1{
+  position: absolute;
+  top: 40vh;
+  width: 100%;
+  text-align: center;
+  font-size: 6rem;
+  letter-spacing: 2px;
+}
+
+h2{
+  position: absolute;
+  top: 150vh;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+
+section{
+  display: block;
+  position: absolute;
+  top: 97vh;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image{
+  flex: 1;
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.text{
+  flex: 1;
+  padding: 5rem;
+  font-size: 1.2rem;
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.image img{
+  width: 100%;
+  object-fit: cover;
+  padding: 5rem;
+}
+
+.push-right{
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.push-left{
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+/* Left Side */
+.contenter{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.texter{
+  flex: 1;
+  padding: 5rem;
+  font-size: 1.2rem;
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.imager{
+  flex: 1;
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.imager img{
+  width: 100%;
+  object-fit: cover;
+  padding: 5rem;
+}
+.pushimage{
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+
+.pushtext{
+  opacity: 0;
+  transform: translateX(-50px);
+}
